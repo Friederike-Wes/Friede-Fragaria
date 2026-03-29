@@ -8,48 +8,90 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- SIDEBAR NAVIGATION -->
-  <aside class="sidebar">
-    <img src="assets/papaver.JPG" alt="Portrait von Friede" class="sidebar-image">
-    
-    <nav class="sidebar-nav">
-      <a href="index.html" class="nav-item" title="Startseite">Home</a>
-      <a href="illustrationen.html" class="nav-item" title="Illustrationen">Illustrationen</a>
-      <a href="workshops.html" class="nav-item" title="Workshops">Workshops</a>
-      <a href="club.html" class="nav-item" title="Botanischer Illustrationsclub">Illustrationsclub</a>
-      <a href="about.html" class="nav-item" title="Über mich">Über mich</a>
-      <a href="shop.html" class="nav-item" title="Shop">Shop</a>
-    </nav>
-  </aside>
+  <div class="hero-side-nav" aria-label="Hauptnavigation">
+    <a href="#home" class="nav-item" title="Home">Home</a>
+    <a href="#illustrationen" class="nav-item" title="Illustrationen">Illustrationen</a>
+    <a href="#workshops" class="nav-item" title="Workshops">Workshops</a>
+    <a href="#club" class="nav-item" title="Botanischer Illustrationsclub">Botanischer Illustrationsclub</a>
+    <a href="#about" class="nav-item" title="Über mich">Über mich</a>
+    <a href="#shop" class="nav-item" title="Shop">Shop</a>
+  </div>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <section class="page-section">
-      <!-- HERO IMAGE -->
-      <img src="assets/Echinaceae.JPG" alt="Echinaceae Illustration" class="hero-image">
-      
-      <!-- CONTENT GRID -->
-      <div class="content-grid">
-        <div class="content-item">
-          <img src="assets/Hedera_helix_colour.JPG" alt="Hedera Helix">
-        </div>
-        
-        <!-- PLACEHOLDER 1 - Bearbeite diesen Text um dein eigenes Bild hinzuzufügen -->
-        <div class="content-placeholder">
-          Bild-Platzhalter 1
-        </div>
-        
-        <!-- PLACEHOLDER 2 - Bearbeite diesen Text um dein eigenes Bild hinzuzufügen -->
-        <div class="content-placeholder">
-          Bild-Platzhalter 2
-        </div>
-        
-        <!-- PLACEHOLDER 3 - Bearbeite diesen Text um dein eigenes Bild hinzuzufügen -->
-        <div class="content-placeholder">
-          Bild-Platzhalter 3
-        </div>
+  <section id="home" class="hero-page" aria-label="Startseite">
+    <div class="hero-content">
+      <h1>Friede Fragaria</h1>
+      <p>Botanische Illustration</p>
+    </div>
+  </section>
+
+  <section id="illustrationen" class="page-section section-illustrationen" aria-label="Illustrationen">
+    <div class="section-overlay illustrationen-overlay">
+      <h1>Illustrationen</h1>
+    </div>
+  </section>
+
+  <section id="workshops" class="page-section section-workshops" aria-label="Workshops">
+    <div class="workshops-overlay">
+      <h1>Workshops</h1>
+    </div>
+    <div class="workshops-grid">
+      <div class="workshop-card">
+        <img src="assets/spiral.JPG" alt="Workshop im Café Spiral">
+        <a href="cafe-spiral.html" class="workshop-link">
+          <div class="workshop-text">im Café Spiral Innsbruck</div>
+        </a>
       </div>
-    </section>
-  </main>
+      <div class="workshop-card">
+        <img src="assets/botanischergarten2.JPG" alt="Workshop im Botanischen Garten">
+        <a href="botanischer-garten.html" class="workshop-link">
+          <div class="workshop-text">im botanischen Garten Innsbruck</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="club" class="page-section section-club" aria-label="Botanischer Illustrationsclub">
+    <div class="section-overlay">
+      <h1>Botanischer Illustrationsclub</h1>
+      <p>Beim gemeinsamen Zeichnen steht das genaue Beobachten im Vordergrund. Wir arbeiten mit lebenden Pflanzen direkt im Botanischen Garten – selbstverständlich im Rahmen der Verhaltensregeln des Gartens: Es dürfen keine Pflanzenteile abgepflückt und keine Beete betreten werden.</p>
+      <p>Der Illustrationsclub ist kein Kurs, sondern ein offenes Treffen zum gemeinsamen Arbeiten, Austauschen und voneinander Lernen. Vorkenntnisse sind nicht nötig – Neugier reicht völlig aus. Wir treffen uns einmal im Monat mit verschiedenen Themenschwerpunkten.</p>
+      <p>Materialien sowie Snacks werden gestellt, daher bitte ich um einen kleinen Kostenbeitrag. Anmeldung gerne per Mail an friederike.westrich[at]web.de – anschließend gibt es genauere Infos zu Treffpunkt und Anreise.</p>
+      <button id="termine-btn" class="termine-btn">Termine</button>
+    </div>
+  </section>
+
+  <section id="about" class="page-section section-about" aria-label="Über mich">
+    <div class="section-overlay">
+      <h1>Über mich</h1>
+      <p>Hi, ich bin Friede! Ich verbinde Botanisieren mit Illustration – mit Fineliner und Aquarell. Mein Hintergrund ist naturwissenschaftlich: Ich habe Landschaftsökologie in Münster studiert und meinen Master in Botanik in Innsbruck gemacht. Meine Liebe gilt den Details und einer wissenschaftlich genauen Darstellung der Natur.</p>
+      <p>Kontakt: friederike.westrich[at]web.de</p>
+      <p>Instagram: <a href="https://www.instagram.com/friede_fragaria/" target="_blank" rel="noopener noreferrer">@friede_fragaria</a></p>
+    </div>
+  </section>
+
+  <section id="shop" class="page-section section-shop" aria-label="Shop">
+    <div class="section-overlay">
+      <h1>Shop</h1>
+      <p>Placeholder: Demnächst mehr.</p>
+    </div>
+  </section>
+  <button id="back-to-top" class="back-to-top" aria-label="Zurück nach oben">↑</button>
+
+  <!-- Modal für Termine -->
+  <div id="termine-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Termine des Botanischen Illustrationsclubs</h2>
+      <ul>
+        <li><strong>16.02.26:</strong> Thema Tropenpflanzen</li>
+        <li><strong>12.03.26:</strong> Thema Frühblüher</li>
+        <li><strong>16.04.26:</strong> Thema Knospen und Austrieb</li>
+        <li><strong>12.05.26:</strong> Thema Blüten im Detail</li>
+        <li><strong>16.06.26:</strong> Thema Gräser</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

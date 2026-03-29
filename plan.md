@@ -20,8 +20,8 @@ Termine
 16.02.26 Thema Tropenpflanzen
 12.03.26 Thema Frühblüher
 16.04.26 Thema Knospen und Austrieb
-12.05.26 Thema .. 
-16.06.26 Thema ..
+12.05.26 Thema Blüten im Detail
+16.06.26 Thema Gräser
 
 
 Schriftart soll ALUMNI SANS PINSTRIPE sein. 
@@ -31,4 +31,3 @@ This website (and it´s whole workspace) will be hosted as git hub page here: ht
 
 
 
-Read my plan.md. I am a beginner. Please ask me the most important design and structure questions before writing code. I want plain HTML files for real pages, not React or a single-page app.

@@ -196,7 +196,7 @@ main {
 }
 
 #home {
-  background: url('assets/beach.JPG') center center/cover fixed;
+  background: url('assets/beach.JPG') center center/cover scroll;
   min-height: 100vh;
   color: white;
   position: relative;

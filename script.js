@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (href.includes('#illustrationen')) return 'Illus';
     if (href.includes('#workshops')) return 'Workshops';
     if (href.includes('#club')) return 'Club';
-    if (href.includes('#about')) return 'Ueber mich';
+    if (href.includes('#about')) return 'Über mich';
 
     return label;
   };

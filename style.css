@@ -878,8 +878,14 @@ h2 {
   .section-club,
   .section-about,
   .section-cafe-spiral,
-  .section-botanischer-garten {
-    background-attachment: scroll;
+  .section-botanischer-garten,
+  .section-endemiten-kalkalpen,
+  .section-kuenstlerische-illustrationen {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .hero-side-nav {

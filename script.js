@@ -3,19 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToTopButton = document.getElementById('back-to-top');
   const mobileQuery = window.matchMedia('(max-width: 768px)');
 
-  const getShortLabel = (label) => {
-    const map = {
-      'Botanischer Illustrationsclub': 'Club',
-      'Kuenstlerische Illustrationen': 'Kunst',
-      'Künstlerische Illustrationen': 'Kunst',
-      'Illustrationen': 'Illus',
-      'Workshops': 'Workshops',
-      'Ueber mich': 'Ueber mich',
-      'Über mich': 'Über mich',
-      'Home': 'Home'
-    };
+  const getShortLabel = (label, href) => {
+    if (!href) return label;
 
-    return map[label] || label;
+    if (href.includes('#home')) return 'Home';
+    if (href.includes('#illustrationen')) return 'Illus';
+    if (href.includes('#workshops')) return 'Workshops';
+    if (href.includes('#club')) return 'Club';
+    if (href.includes('#about')) return 'Ueber mich';
+
+    return label;
   };
 
   const updateMobileLabels = () => {
@@ -24,8 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         link.dataset.fullLabel = link.textContent.trim();
       }
 
+      const href = link.getAttribute('href') || '';
+
       link.textContent = mobileQuery.matches
-        ? getShortLabel(link.dataset.fullLabel)
+        ? getShortLabel(link.dataset.fullLabel, href)
         : link.dataset.fullLabel;
     });
   };

@@ -963,7 +963,8 @@ h2 {
   }
 
   .section-overlay {
-    position: static;
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -974,7 +975,8 @@ h2 {
   }
 
   .illustrationen-overlay {
-    position: static;
+    position: relative;
+    z-index: 2;
     transform: none;
     width: 100%;
     padding: 20px;
@@ -1002,7 +1004,8 @@ h2 {
   }
 
   .section-cafe-spiral .cafe-overlay {
-    position: static;
+    position: relative;
+    z-index: 2;
     transform: none;
     width: 100%;
     padding: 24px;
@@ -1010,7 +1013,8 @@ h2 {
   }
 
   .endemiten-overlay {
-    position: static;
+    position: relative;
+    z-index: 2;
     transform: none;
     width: 100%;
     padding: 22px;

@@ -35,7 +35,7 @@ body {
   padding: 0;
 }
 
-.hero-page, .section-illustrationen, .section-workshops, .section-club, .section-about, .section-shop, .section-cafe-spiral, .section-botanischer-garten {
+.hero-page, .section-illustrationen, .section-workshops, .section-club, .section-about, .section-shop, .section-cafe-spiral, .section-botanischer-garten, .section-endemiten-kalkalpen, .section-kuenstlerische-illustrationen {
   position: relative;
   min-height: 100vh;
   background-size: cover;
@@ -53,6 +53,8 @@ body {
 .section-shop { background-color: #f4f4f4; }
 .section-cafe-spiral { background-image: url('assets/clours.JPG'); }
 .section-botanischer-garten { background-image: url('assets/botanischergarten2.JPG'); }
+.section-endemiten-kalkalpen { background-image: url('assets/hochschwab.JPG'); }
+.section-kuenstlerische-illustrationen { background-image: url('assets/beach2.JPG'); }
 
 .hero-page::after,
 .section-illustrationen::after,
@@ -61,7 +63,9 @@ body {
 .section-about::after,
 .section-shop::after,
 .section-cafe-spiral::after,
-.section-botanischer-garten::after {
+.section-botanischer-garten::after,
+.section-endemiten-kalkalpen::after,
+.section-kuenstlerische-illustrationen::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -616,6 +620,36 @@ h2 {
   padding: 0;
 }
 
+.illustrationen-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.illustrationen-link:hover,
+.illustrationen-link:focus-visible {
+  background: rgba(46, 79, 62, 0.95);
+  transform: translateY(-1px);
+}
+
+.endemiten-overlay {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  width: min(880px, 90%);
+  height: auto;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+}
+
 /* ============================================
    CAFE SPIRAL PAGE
    ============================================ */
@@ -662,6 +696,34 @@ h2 {
   width: 100%;
   height: 420px;
   object-fit: cover;
+  display: block;
+}
+
+.endemiten-gallery {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.endemiten-gallery-grid {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+}
+
+.endemiten-gallery-item {
+  margin: 0;
+  padding: 0;
+}
+
+.endemiten-gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -831,11 +893,13 @@ h2 {
     backdrop-filter: blur(6px);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
     z-index: 1002;
   }
 
   .hero-side-nav .nav-item {
     flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 
   .hero-side-nav::-webkit-scrollbar {
@@ -869,9 +933,10 @@ h2 {
     writing-mode: horizontal-tb;
     transform: none;
     font-size: 13px;
-    padding: 8px 10px;
+    padding: 8px 11px;
     min-width: max-content;
     white-space: nowrap;
+    letter-spacing: 0.02em;
   }
 
   .nav-item:hover,
@@ -905,7 +970,20 @@ h2 {
   }
 
   .section-overlay p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-content {
+    padding: 18px 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.05rem;
   }
 
   .section-cafe-spiral .cafe-overlay {
@@ -914,6 +992,18 @@ h2 {
     width: 100%;
     padding: 24px;
     border-radius: 10px;
+  }
+
+  .endemiten-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 22px;
+  }
+
+  .illustrationen-link {
+    font-size: 0.95rem;
+    padding: 8px 14px;
   }
 
   .cafe-gallery {
@@ -1006,7 +1096,7 @@ h2 {
 
   .nav-item {
     font-size: 12px;
-    padding: 7px 9px;
+    padding: 7px 10px;
   }
 
   .hero-side-nav {

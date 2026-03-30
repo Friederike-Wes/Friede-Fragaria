@@ -1,22 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll('.sidebar-nav a');
+  const links = document.querySelectorAll('.hero-side-nav a, .sidebar-nav a');
   const backToTopButton = document.getElementById('back-to-top');
+  const mobileQuery = window.matchMedia('(max-width: 768px)');
+
+  const getShortLabel = (label) => {
+    const map = {
+      'Botanischer Illustrationsclub': 'Club',
+      'Kuenstlerische Illustrationen': 'Kunst',
+      'Künstlerische Illustrationen': 'Kunst',
+      'Illustrationen': 'Illus',
+      'Workshops': 'Workshops',
+      'Ueber mich': 'Ueber mich',
+      'Über mich': 'Über mich',
+      'Home': 'Home'
+    };
+
+    return map[label] || label;
+  };
+
+  const updateMobileLabels = () => {
+    links.forEach((link) => {
+      if (!link.dataset.fullLabel) {
+        link.dataset.fullLabel = link.textContent.trim();
+      }
+
+      link.textContent = mobileQuery.matches
+        ? getShortLabel(link.dataset.fullLabel)
+        : link.dataset.fullLabel;
+    });
+  };
 
   const activateLink = () => {
     const hash = window.location.hash || '#home';
+    const path = window.location.pathname.split('/').pop() || 'index.html';
 
     links.forEach((link) => {
       link.classList.remove('active');
       link.removeAttribute('aria-current');
 
       const linkHref = link.getAttribute('href');
+      const normalizedHref = linkHref.replace(/^\.\//, '');
 
-      if (linkHref === hash) {
+      if (normalizedHref === hash || normalizedHref === `${path}${hash}`) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       }
 
-      if (linkHref === 'index.html' && (hash === '#home' || hash === '')) {
+      if ((normalizedHref === '#home' || normalizedHref === 'index.html#home') && (hash === '#home' || hash === '')) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       }
@@ -38,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener('hashchange', activateLink);
+  mobileQuery.addEventListener('change', updateMobileLabels);
 
   if (backToTopButton) {
     window.addEventListener('scroll', () => {
@@ -78,5 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  updateMobileLabels();
   activateLink();
 });

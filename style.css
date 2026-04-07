@@ -885,9 +885,25 @@ h2 {
 }
 
 .section-overlay .instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   margin-top: 6px;
   align-self: flex-start;
   text-decoration: none;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .section-overlay .instagram-btn:hover,

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (href.includes('#home')) return 'Home';
     if (href.includes('#illustrationen')) return 'Illus';
     if (href.includes('#workshops')) return 'Workshops';
-    if (href.includes('#club')) return 'Botanischer Illustrationsclub +';
+    if (href.includes('#club')) return 'Botanischer Illustrationsclub';
     if (href.includes('#about')) return 'Über mich';
     if (href.includes('#kontakt')) return 'Kontakt';
 

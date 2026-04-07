@@ -884,19 +884,24 @@ h2 {
   background-color: var(--hover);
 }
 
-.section-overlay .instagram-btn {
+.about-icon-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.section-overlay .icon-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   padding: 0;
-  margin-top: 6px;
-  align-self: flex-start;
   text-decoration: none;
 }
 
-.instagram-icon {
+.icon-symbol {
   width: 20px;
   height: 20px;
   fill: none;
@@ -906,8 +911,8 @@ h2 {
   stroke-linejoin: round;
 }
 
-.section-overlay .instagram-btn:hover,
-.section-overlay .instagram-btn:focus-visible {
+.section-overlay .icon-btn:hover,
+.section-overlay .icon-btn:focus-visible {
   text-decoration: none;
 }
 

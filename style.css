@@ -917,6 +917,11 @@ h2 {
   stroke-linejoin: round;
 }
 
+.mail-symbol {
+  width: 31px;
+  height: 31px;
+}
+
 .instagram-symbol {
   width: 28px;
   height: 28px;

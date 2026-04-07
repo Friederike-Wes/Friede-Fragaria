@@ -642,7 +642,7 @@ h2 {
 .section-overlay {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 33.33%;
   height: 100%;
   display: flex;

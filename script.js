@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (href.includes('#workshops')) return 'Workshops';
     if (href.includes('#club')) return 'Club';
     if (href.includes('#about')) return 'Über mich';
+    if (href.includes('#kontakt')) return 'Kontakt';
 
     return label;
   };
@@ -106,6 +107,30 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.target == modal) {
       modal.style.display = 'none';
     }
+  }
+
+  // Kontaktformular: öffnet das E-Mail-Programm mit vorausgefüllter Nachricht
+  const kontaktForm = document.querySelector('.kontakt-form');
+  if (kontaktForm) {
+    kontaktForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (!kontaktForm.checkValidity()) {
+        kontaktForm.reportValidity();
+        return;
+      }
+
+      const name = (document.getElementById('kontakt-name')?.value || '').trim();
+      const email = (document.getElementById('kontakt-email')?.value || '').trim();
+      const nachricht = (document.getElementById('kontakt-nachricht')?.value || '').trim();
+
+      const subject = encodeURIComponent('Kontakt über Website');
+      const body = encodeURIComponent(
+        `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${nachricht}`
+      );
+
+      window.location.href = `mailto:friederike.westrich@web.de?subject=${subject}&body=${body}`;
+    });
   }
 
   updateMobileLabels();

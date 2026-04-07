@@ -929,6 +929,11 @@ h2 {
   fill: currentColor;
 }
 
+.profile-symbol {
+  width: 29px;
+  height: 29px;
+}
+
 .section-overlay .icon-btn:hover,
 .section-overlay .icon-btn:focus-visible {
   opacity: 0.82;

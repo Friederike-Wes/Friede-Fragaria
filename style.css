@@ -892,6 +892,21 @@ h2 {
   margin-top: 6px;
 }
 
+.about-more-link {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-more-link:hover,
+.about-more-link:focus-visible {
+  color: #e8f5e1;
+}
+
 .section-overlay .icon-btn {
   display: inline-flex;
   align-items: center;
@@ -927,11 +942,6 @@ h2 {
   width: 28px;
   height: 28px;
   fill: currentColor;
-}
-
-.profile-symbol {
-  width: 29px;
-  height: 29px;
 }
 
 .section-overlay .icon-btn:hover,

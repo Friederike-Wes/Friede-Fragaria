@@ -895,8 +895,8 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   color: #fff;
   background: transparent;
@@ -908,8 +908,8 @@ h2 {
 }
 
 .icon-symbol {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -918,8 +918,8 @@ h2 {
 }
 
 .instagram-symbol {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 

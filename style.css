@@ -972,7 +972,6 @@ h2 {
     padding: 24px 16px;
   }
 
-  .section-overlay {
   .section-overlay,
   .illustrationen-overlay,
   .endemiten-overlay,
@@ -1018,7 +1017,6 @@ h2 {
     font-size: 1.05rem;
   }
 
-  .section-cafe-spiral .cafe-overlay {
   .illustrationen-link {
     font-size: 0.95rem;
     padding: 8px 14px;

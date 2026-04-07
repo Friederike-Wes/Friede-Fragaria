@@ -649,6 +649,12 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
+.section-overlay .illustrationen-link,
+.section-overlay .illustrationen-link:hover,
+.section-overlay .illustrationen-link:focus-visible {
+  text-decoration: none;
+}
+
 .illustrationen-link:hover,
 .illustrationen-link:focus-visible {
   background-color: var(--hover);

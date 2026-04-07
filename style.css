@@ -402,6 +402,10 @@ main {
   display: block;
 }
 
+.workshop-card img.workshop-bw {
+  filter: grayscale(100%);
+}
+
 .workshop-text {
   position: absolute;
   bottom: 0;

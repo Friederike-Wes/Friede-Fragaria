@@ -880,6 +880,17 @@ h2 {
   background-color: var(--hover);
 }
 
+.section-overlay .instagram-btn {
+  margin-top: 6px;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.section-overlay .instagram-btn:hover,
+.section-overlay .instagram-btn:focus-visible {
+  text-decoration: none;
+}
+
 /* ============================================
    MODAL
    ============================================ */

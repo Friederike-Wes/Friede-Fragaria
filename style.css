@@ -125,11 +125,11 @@ body {
 }
 
 .hero-content h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Libre Baskerville', serif;
   font-size: 3.2rem;
   font-weight: 400;
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
 }
 

@@ -55,6 +55,7 @@ body {
 .section-botanischer-garten { background-image: url('assets/botanischergarten2.JPG'); }
 .section-endemiten-kalkalpen { background-image: url('assets/hochschwab.JPG'); }
 .section-kuenstlerische-illustrationen { background-image: url('assets/beach2.JPG'); }
+.section-alles-ausser-pflanzen { background-image: url('assets/Waldgemeinschaft.JPG'); }
 
 .hero-page::after,
 .section-illustrationen::after,

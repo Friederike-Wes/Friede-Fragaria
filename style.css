@@ -621,6 +621,56 @@ main {
 }
 
 /* ============================================
+   NEWS SECTION
+   ============================================ */
+
+.section-news {
+  background: #f9f7f4;
+  min-height: auto;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.news-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.news-container h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #2f4f3e;
+  margin-bottom: 40px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.news-item {
+  border-left: 3px solid #9caf88;
+  padding-left: 20px;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6e8b74;
+  margin-bottom: 6px;
+}
+
+.news-text {
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ============================================
    CONTACT SECTION
    ============================================ */
 

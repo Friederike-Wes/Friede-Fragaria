@@ -172,7 +172,7 @@ body {
 }
 
 #home .hero-content {
-  padding-right: clamp(360px, 38vw, 480px);
+  padding-right: clamp(280px, 30vw, 360px);
 }
 
 .hero-content h1 {
@@ -196,7 +196,7 @@ body {
   top: 50%;
   right: clamp(20px, 4vw, 56px);
   transform: translateY(-50%);
-  width: min(380px, 34vw);
+  width: min(300px, 26vw);
   background: rgba(247, 244, 239, 0.9);
   color: #2f4f3e;
   border: 1px solid rgba(255, 255, 255, 0.62);

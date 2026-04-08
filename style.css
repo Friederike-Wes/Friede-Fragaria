@@ -1467,11 +1467,12 @@ h2 {
     right: auto;
     bottom: auto;
     flex-direction: column;
-    gap: 8px;
-    padding: 0;
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    gap: 6px;
+    padding: 5px 4px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     overflow: visible;
     z-index: 1002;
     border-bottom: none;
@@ -1519,8 +1520,8 @@ h2 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    font-size: 12px;
-    padding: 7px 6px;
+    font-size: 11px;
+    padding: 6px 5px;
     min-width: 0;
     white-space: normal;
     letter-spacing: 0.02em;
@@ -1580,6 +1581,7 @@ h2 {
   }
 
   #home .hero-content {
+    padding-top: clamp(116px, 17vh, 150px);
     padding-right: 16px;
   }
 
@@ -1801,12 +1803,18 @@ h2 {
   .hero-side-nav {
     top: calc(10px + env(safe-area-inset-top));
     left: 6px;
-    gap: 6px;
-    padding: 0;
+    gap: 5px;
+    padding: 4px 3px;
   }
 
   .language-switch {
+    top: calc(10px + env(safe-area-inset-top));
     right: 6px;
+  }
+
+  #home .hero-content {
+    padding-top: 112px;
+    padding-right: 14px;
   }
 
   .hero-image {
@@ -1831,7 +1839,7 @@ h2 {
 
   .home-news-window {
     width: min(360px, 92vw);
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
   }
 

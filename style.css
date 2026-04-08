@@ -965,6 +965,27 @@ h2 {
   order: 1;
 }
 
+.more-about-duo-gallery {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  background: #ffffff;
+}
+
+.more-about-duo-item {
+  margin: 0;
+  padding: 0;
+}
+
+.more-about-duo-item img {
+  width: 100%;
+  height: min(56vh, 560px);
+  object-fit: cover;
+  display: block;
+}
+
 /* ============================================
    WORKSHOPS OVERLAY
    ============================================ */
@@ -1422,6 +1443,14 @@ h2 {
   .more-about-split.is-reverse .more-about-photo-panel,
   .more-about-split.is-reverse .more-about-text-panel {
     order: initial;
+  }
+
+  .more-about-duo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .more-about-duo-item img {
+    height: 44vh;
   }
 
   .workshops-overlay {

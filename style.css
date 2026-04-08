@@ -1063,6 +1063,14 @@ h2 {
   z-index: 2;
 }
 
+.about-arrow-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: inherit;
+  text-decoration: none;
+}
+
 .about-more-link-left {
   color: white;
   text-decoration: none;
@@ -1077,7 +1085,9 @@ h2 {
 }
 
 .about-more-link-left:hover,
-.about-more-link-left:focus-visible {
+.about-more-link-left:focus-visible,
+.about-arrow-link:hover .about-more-link-left,
+.about-arrow-link:focus-visible .about-more-link-left {
   color: #e8f5e1;
 }
 

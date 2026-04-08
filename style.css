@@ -1923,3 +1923,20 @@ h2 {
     right: 12px;
   }
 }
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: var(--gray-light);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}

@@ -992,9 +992,10 @@ h2 {
 
 .more-about-duo-item img {
   width: 100%;
-  height: min(56vh, 560px);
+  height: min(80vh, 820px);
   object-fit: cover;
   display: block;
+  filter: grayscale(100%);
 }
 
 /* ============================================
@@ -1461,7 +1462,7 @@ h2 {
   }
 
   .more-about-duo-item img {
-    height: 44vh;
+    height: 60vh;
   }
 
   .workshops-overlay {

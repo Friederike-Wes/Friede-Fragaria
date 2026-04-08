@@ -172,7 +172,7 @@ body {
 }
 
 #home .hero-content {
-  padding-right: clamp(280px, 30vw, 360px);
+  padding-right: clamp(230px, 24vw, 300px);
 }
 
 .hero-content h1 {
@@ -196,7 +196,7 @@ body {
   top: 50%;
   right: clamp(20px, 4vw, 56px);
   transform: translateY(-50%);
-  width: min(300px, 26vw);
+  width: min(250px, 20vw);
   background: rgba(247, 244, 239, 0.9);
   color: #2f4f3e;
   border: 1px solid rgba(255, 255, 255, 0.62);
@@ -1597,9 +1597,12 @@ h2 {
     position: static;
     transform: none;
     margin-top: 20px;
-    width: min(340px, 86vw);
+    width: fit-content;
+    max-width: min(250px, 78vw);
     padding: 10px 10px;
     border-radius: 9px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home-news-window h2 {
@@ -1861,7 +1864,8 @@ h2 {
   }
 
   .home-news-window {
-    width: min(300px, 88vw);
+    width: fit-content;
+    max-width: min(220px, 80vw);
     padding: 8px;
     border-radius: 8px;
   }

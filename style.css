@@ -49,7 +49,7 @@ body {
 .section-illustrationen { background-image: url('assets/Hepatica.JPG'); }
 .section-workshops { background-image: url('assets/mörser.JPG'); }
 .section-club { background-image: url('assets/55369360_Unknown.JPG'); }
-.section-about { background-image: url("assets/Mehr über mich/montserrat.JPG"); }
+.section-about { background-image: url('assets/forest.JPG'); }
 .section-mehr-uber-mich { background-image: url('assets/mehr-uber-mich-1.JPG'); }
 .section-kontakt {
   background: linear-gradient(180deg, #f5f7f3 0%, #e8efe4 100%);
@@ -1077,7 +1077,7 @@ h2 {
 
 .about-bent-arrow {
   width: 220px;
-  height: 170px;
+  height: 110px;
   margin-top: 6px;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }

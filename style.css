@@ -878,19 +878,6 @@ h2 {
    MEHR ÜBER MICH PAGE
    ============================================ */
 
-.section-mehr-uber-mich .cafe-overlay {
-  top: 50%;
-  left: 50%;
-  right: auto;
-  width: min(900px, 90%);
-  height: auto;
-  transform: translate(-50%, -50%);
-  align-items: center;
-  text-align: center;
-  padding: 36px;
-  border-radius: 14px;
-}
-
 .section-about .cafe-overlay {
   top: 50%;
   left: 50%;
@@ -904,62 +891,78 @@ h2 {
   border-radius: 14px;
 }
 
-.more-about-gallery {
+.more-about-page {
   position: relative;
   z-index: 1;
-  background: #f8f5ef;
-  padding: 72px 40px;
+  background: #ffffff;
 }
 
-.more-about-gallery-grid {
-  max-width: 1100px;
-  margin: 0 auto;
+.more-about-split {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  background: #ffffff;
 }
 
-.more-about-gallery-item {
-  border-radius: 14px;
+.more-about-photo-panel {
+  min-height: 100vh;
   overflow: hidden;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-.more-about-gallery-item img {
+.more-about-photo-panel img {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.more-about-text {
-  position: relative;
-  z-index: 1;
+.more-about-text-panel {
   background: #ffffff;
-  padding: 72px 40px;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(32px, 7vw, 96px);
 }
 
-.about-info-content {
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.8;
+.more-about-text-inner {
+  width: min(620px, 100%);
 }
 
-.about-info-content h2 {
-  font-size: 28px;
-  color: var(--primary);
-  margin-top: 32px;
+.more-about-text-inner h1,
+.more-about-text-inner h2 {
+  color: #111111;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.more-about-text-inner h1 {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+}
+
+.more-about-text-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.more-about-text-inner p {
+  color: #111111;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.7;
   margin-bottom: 16px;
 }
 
-.about-info-content p {
-  font-size: 16px;
-  color: var(--gray-dark);
-  margin-bottom: 20px;
+.more-about-text-inner a {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.about-info-content h2:first-child {
-  margin-top: 0;
+.more-about-split.is-reverse .more-about-photo-panel {
+  order: 2;
+}
+
+.more-about-split.is-reverse .more-about-text-panel {
+  order: 1;
 }
 
 /* ============================================
@@ -1051,7 +1054,7 @@ h2 {
 
 .about-left-btn-wrap {
   position: absolute;
-  left: 9%;
+  left: calc(9% + 2cm);
   top: 46%;
   transform: translateY(-50%);
   display: flex;
@@ -1077,7 +1080,7 @@ h2 {
 
 .about-bent-arrow {
   width: 220px;
-  height: 110px;
+  height: 54px;
   margin-top: 6px;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
@@ -1377,30 +1380,36 @@ h2 {
     height: 320px;
   }
 
-  .more-about-gallery {
-    padding: 44px 16px;
-  }
-
-  .more-about-gallery-grid {
+  .more-about-split {
     grid-template-columns: 1fr;
-    gap: 18px;
+    min-height: auto;
   }
 
-  .more-about-gallery-item img {
-    height: 320px;
+  .more-about-photo-panel {
+    min-height: 340px;
+    height: 58vh;
   }
 
-  .more-about-text {
-    padding: 44px 16px;
+  .more-about-text-panel {
+    min-height: auto;
+    padding: 34px 20px;
   }
 
-  .about-info-content h2 {
-    font-size: 22px;
-    margin-top: 24px;
+  .more-about-text-inner h1 {
+    font-size: 2rem;
   }
 
-  .about-info-content p {
-    font-size: 15px;
+  .more-about-text-inner h2 {
+    font-size: 1.45rem;
+  }
+
+  .more-about-text-inner p {
+    font-size: 1rem;
+  }
+
+  .more-about-split.is-reverse .more-about-photo-panel,
+  .more-about-split.is-reverse .more-about-text-panel {
+    order: initial;
   }
 
   .workshops-overlay {

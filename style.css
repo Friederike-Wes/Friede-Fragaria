@@ -1672,6 +1672,34 @@ h2 {
     height: 60vh;
   }
 
+  .section-about .about-left-btn-wrap {
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    align-items: center;
+    z-index: 4;
+    width: max-content;
+    max-width: calc(100% - 24px);
+  }
+
+  .section-about .about-arrow-link {
+    align-items: center;
+  }
+
+  .section-about .about-more-link-left {
+    font-size: 1.35rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .section-about .about-bent-arrow {
+    width: min(240px, 70vw);
+    height: 46px;
+    margin-top: -6px;
+  }
+
   .workshops-overlay {
     position: static;
     padding: 20px;
@@ -1809,6 +1837,16 @@ h2 {
 
   .home-news-window h2 {
     font-size: 1.1rem;
+  }
+
+  .section-about .about-more-link-left {
+    font-size: 1.1rem;
+  }
+
+  .section-about .about-bent-arrow {
+    width: min(190px, 68vw);
+    height: 38px;
+    margin-top: -4px;
   }
 
   .workshop-card {

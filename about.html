@@ -5,69 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Über mich | Friede Fragaria</title>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260408d">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png?v=20260408d">
-  <link rel="shortcut icon" href="assets/favicon-64.png?v=20260408d">
+  <link rel="stylesheet" href="style.css?v=20260408f">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png?v=20260408f">
+  <link rel="shortcut icon" href="assets/favicon-64.png?v=20260408f">
 </head>
 <body>
-  <!-- SIDEBAR NAVIGATION -->
-  <aside class="sidebar">
-    <img src="assets/papaver.JPG" alt="Portrait von Friede" class="sidebar-image">
-    
-    <nav class="sidebar-nav">
-      <a href="index.html" class="nav-item" title="Startseite">Home</a>
-      <a href="illustrationen.html" class="nav-item" title="Illustrationen">Illustrationen</a>
-      <a href="workshops.html" class="nav-item" title="Workshops">Workshops</a>
-      <a href="club.html" class="nav-item" title="Botanischer Illustrationsclub">Illustrationsclub</a>
-      <a href="about.html" class="nav-item" title="Über mich">Über mich</a>
-    </nav>
-  </aside>
+  <div class="hero-side-nav" aria-label="Hauptnavigation">
+    <a href="index.html#home" class="nav-item" title="Home">Home</a>
+    <a href="index.html#illustrationen" class="nav-item" title="Illustrationen">Illustrationen</a>
+    <a href="index.html#workshops" class="nav-item" title="Workshops">Workshops</a>
+    <a href="index.html#club" class="nav-item" title="Botanischer Illustrationsclub">Botanischer Illustrationsclub</a>
+    <a href="about.html" class="nav-item" title="Über mich">Über mich</a>
+  </div>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <section class="page-section">
-      <div class="hero-wrap">
-        <img src="assets/porträ.JPG" alt="Hero Über mich" class="hero-image hero-fullscreen">
-        <div class="hero-overlay">
-          <h1>Über mich</h1>
-          <p>Friede ist botanische Illustratorin mit Naturwissenschafts-Hintergrund.</p>
-        </div>
-      </div>
+  <section id="about" class="page-section section-about" aria-label="Über mich">
+    <div class="section-overlay cafe-overlay">
+      <h1>Über mich</h1>
+      <p>Ich verbinde Botanisieren mit Illustration – mit Fineliner und Aquarell. Auf meinen Postkarten experimentiere ich mit Naturfarben aus Roter Beete, Kurkuma, Rotkohl und Spinat und spiele mit Säure-Base-Reaktionen, wodurch jede Karte zum Unikat wird.</p>
+      
+      <p>Mein Hintergrund ist naturwissenschaftlich: Ich habe Landschaftsökologie in Münster studiert und meinen Master in Botanik in Innsbruck gemacht. Meine Liebe gilt den Details und einer wissenschaftlich genauen Darstellung der Natur.</p>
+      
+      <p style="margin-top: 20px;"><strong>Kontakt:</strong><br>
+      <a href="mailto:friederike.westrich@web.de">friederike.westrich@web.de</a></p>
+    </div>
+  </section>
 
-      <div class="about-container">
-        <img src="assets/DSCF6061.JPG" alt="Portrait von Friede" class="about-image">
-        
-        <div class="about-text">
-          <div class="about-button-wrapper">
-            <a href="mehr-uber-mich.html" class="more-about-btn">Mehr über mich</a>
-            <svg class="more-about-arrow" viewBox="0 0 2 120" xmlns="http://www.w3.org/2000/svg">
-              <line x1="1" y1="0" x2="1" y2="100" stroke="#333" stroke-width="2"/>
-              <polygon points="1,120 -2,105 4,105" fill="#333"/>
-            </svg>
-          </div>
-
-          <h1>Hi, ich bin Friede!</h1>
-          
-          <p>
-            Ich verbinde Botanisieren mit Illustration – mit Fineliner und Aquarell. Auf meinen Postkarten 
-            experimentiere ich mit Naturfarben aus Roter Beete, Kurkuma, Rotkohl und Spinat und spiele mit 
-            Säure-Base-Reaktionen, wodurch jede Karte zum Unikat wird.
-          </p>
-
-          <p>
-            Mein Hintergrund ist naturwissenschaftlich: Ich habe Landschaftsökologie in Münster studiert und 
-            meinen Master in Botanik in Innsbruck gemacht. Meine Liebe gilt den Details und einer wissenschaftlich 
-            genauen Darstellung der Natur.
-          </p>
-
-          <p style="margin-top: 30px;">
-            <strong>Kontakt:</strong><br>
-            <a href="mailto:friederike.westrich@web.de" style="color: #2D9AC3; text-decoration: none;">friederike.westrich@web.de</a>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="script.js?v=20260408d"></script>
+  <button id="back-to-top" class="back-to-top" aria-label="Zurück nach oben">↑</button>
+  <script src="script.js?v=20260408f"></script>
 </body>
 </html>

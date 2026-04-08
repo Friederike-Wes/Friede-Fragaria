@@ -965,13 +965,24 @@ h2 {
   order: 1;
 }
 
-.more-about-duo-gallery {
+.more-about-duo-section {
+  background: #ffffff;
   position: relative;
   z-index: 1;
+}
+
+.more-about-duo-heading {
+  text-align: center;
+  padding: 48px 20px 28px;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #111111;
+  font-weight: 600;
+}
+
+.more-about-duo-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  background: #ffffff;
 }
 
 .more-about-duo-item {

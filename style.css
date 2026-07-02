@@ -45,18 +45,18 @@ body {
   overflow: hidden;
 }
 
-.hero-page { background-image: url('assets/beach.JPG'); }
-.section-illustrationen { background-image: url('assets/Hepatica.JPG'); }
-.section-workshops { background-image: url('assets/mörser.JPG'); }
-.section-club { background-image: url('assets/55369360_Unknown.JPG'); }
-.section-about { background-image: url('assets/forest.JPG'); }
-.section-mehr-uber-mich { background-image: url('assets/Mehr über mich/gloria.JPG'); }
+.hero-page { background-image: url('assets/beach-1200w.JPG'); }
+.section-illustrationen { background-image: url('assets/Hepatica-1200w.JPG'); }
+.section-workshops { background-image: url('assets/mörser-1200w.JPG'); }
+.section-club { background-image: url('assets/55369360_Unknown-1200w.JPG'); }
+.section-about { background-image: url('assets/forest-1200w.JPG'); }
+.section-mehr-uber-mich { background-image: url('assets/Mehr über mich/gloria-1200w.JPG'); }
 .section-shop { background-color: #f4f4f4; }
-.section-cafe-spiral { background-image: url('assets/clours.JPG'); }
-.section-botanischer-garten { background-image: url('assets/botanischergarten2.JPG'); }
-.section-endemiten-kalkalpen { background-image: url('assets/hochschwab.JPG'); }
-.section-kuenstlerische-illustrationen { background-image: url('assets/beach2.JPG'); }
-.section-alles-ausser-pflanzen { background-image: url('assets/Waldgemeinschaft.JPG'); }
+.section-cafe-spiral { background-image: url('assets/clours-1200w.JPG'); }
+.section-botanischer-garten { background-image: url('assets/botanischergarten2-1200w.JPG'); }
+.section-endemiten-kalkalpen { background-image: url('assets/hochschwab-1200w.JPG'); }
+.section-kuenstlerische-illustrationen { background-image: url('assets/beach2-1200w.JPG'); }
+.section-alles-ausser-pflanzen { background-image: url('assets/Waldgemeinschaft-1200w.JPG'); }
 
 .hero-page::after,
 .section-illustrationen::after,
@@ -315,11 +315,10 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
 }
 
 #home {
-  background: url('assets/beach.JPG') center center/cover scroll;
+  background: url('assets/beach-1200w.JPG') center center/cover scroll;
   min-height: 100vh;
   color: white;
   position: relative;
@@ -1869,4 +1868,19 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+
+@media (max-width: 900px) {
+  .hero-page { background-image: url('assets/beach-480w.JPG'); }
+  .section-illustrationen { background-image: url('assets/Hepatica-480w.JPG'); }
+  .section-workshops { background-image: url('assets/mörser-480w.JPG'); }
+  .section-club { background-image: url('assets/55369360_Unknown-480w.JPG'); }
+  .section-about { background-image: url('assets/forest-480w.JPG'); }
+  .section-mehr-uber-mich { background-image: url('assets/Mehr über mich/gloria-480w.JPG'); }
+  .section-cafe-spiral { background-image: url('assets/clours-480w.JPG'); }
+  .section-botanischer-garten { background-image: url('assets/botanischergarten2-480w.JPG'); }
+  .section-endemiten-kalkalpen { background-image: url('assets/hochschwab-480w.JPG'); }
+  .section-kuenstlerische-illustrationen { background-image: url('assets/beach2-480w.JPG'); }
+  .section-alles-ausser-pflanzen { background-image: url('assets/Waldgemeinschaft-480w.JPG'); }
 }

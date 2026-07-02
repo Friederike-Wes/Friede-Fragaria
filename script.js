@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('termine-btn');
   const span = document.getElementsByClassName('close')[0];
 
-  if (btn) {
+  if (btn && btn.tagName.toLowerCase() === 'button') {
     btn.onclick = function() {
       modal.style.display = 'block';
     }

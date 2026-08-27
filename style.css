@@ -908,6 +908,7 @@ h2 {
 .section-overlay .illustrationen-link:hover,
 .section-overlay .illustrationen-link:focus-visible {
   text-decoration: none;
+  color: #000000;
 }
 
 .illustrationen-link:hover,

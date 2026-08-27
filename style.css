@@ -894,7 +894,7 @@ h2 {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #31D492;
+  background-color: #6ABD9A;
   color: #000000;
   text-decoration: none;
   font-size: 1rem;
@@ -912,7 +912,7 @@ h2 {
 
 .illustrationen-link:hover,
 .illustrationen-link:focus-visible {
-  background-color: #28b87a;
+  background-color: #59b78a;
 }
 
 .illustrationen-link:focus-visible {

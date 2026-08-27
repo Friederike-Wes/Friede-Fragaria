@@ -189,7 +189,7 @@ body {
   right: clamp(20px, 4vw, 56px);
   transform: translateY(-50%);
   width: min(320px, 24vw);
-  background: linear-gradient(180deg, rgba(141,182,205,0.98), rgba(141,182,205,0.92));
+  background: linear-gradient(180deg, #6fb7c4 0%, #5aa7b5 100%);
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 18px;

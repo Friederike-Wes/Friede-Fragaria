@@ -189,7 +189,7 @@ body {
   right: clamp(20px, 4vw, 56px);
   transform: translateY(-50%);
   width: min(250px, 20vw);
-  background: #836FFF;
+  background: #8db6cd;
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;

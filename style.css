@@ -884,6 +884,13 @@ h2 {
   margin-bottom: 4px;
 }
 
+/* Remove text-shadow for illustrations section to ensure crisp black text */
+.illustrationen-overlay h1,
+.illustrationen-overlay .illustrationen-link,
+.section-illustrationen .illustrationen-link {
+  text-shadow: none !important;
+}
+
 .illustrationen-link {
   display: inline-flex;
   align-items: center;

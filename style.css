@@ -541,8 +541,12 @@ main {
   display: block;
 }
 
-.workshop-card img.workshop-bw {
-  filter: grayscale(100%);
+.workshop-card img {
+  filter: none;
+}
+
+.workshop-card-tinte img {
+  object-position: center 72%;
 }
 
 .workshop-text {
